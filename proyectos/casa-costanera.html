@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html class="light" lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Casa Costanera | Diseinua Arquitectura</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: {
+          "brand-orange": "#E8621F",
+          "brand-amber": "#F5B731",
+          "brand-offwhite": "#F7F7F5",
+          "brand-charcoal": "#2D2D2D",
+          "brand-darkgray": "#4A4A4A",
+          "brand-gray": "#C4C4C4",
+          "brand-midgray": "#8A8A8A",
+          "brand-tint-orange": "#FEF0E8",
+          "brand-tint-amber": "#FEF6E5",
+        },
+        borderRadius: {
+          "DEFAULT": "0.125rem",
+          "lg": "0.25rem",
+          "xl": "0.5rem",
+          "full": "0.75rem"
+        },
+        fontFamily: {
+          "montserrat": ["Montserrat", "sans-serif"],
+          "inter": ["Inter", "sans-serif"],
+        }
+      }
+    }
+  }
+</script>
+<style>
+  body { font-family: 'Inter', sans-serif; background-color: #F7F7F5; color: #2D2D2D; }
+  .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+</style>
+</head>
+<body class="antialiased">
+
+<!-- NAVIGATION -->
+<nav class="sticky top-0 z-50 bg-white border-b border-[#C4C4C4]/20">
+  <div class="max-w-[1200px] mx-auto flex justify-between items-center px-8 py-4 w-full">
+    <a href="../index.html" class="flex items-center gap-3 no-underline">
+      <div class="flex gap-1">
+        <span class="w-3 h-3 rounded-full bg-[#E8621F]"></span>
+        <span class="w-3 h-3 rounded-full bg-[#F5B731]"></span>
+        <span class="w-3 h-3 rounded-full bg-[#C4C4C4]"></span>
+      </div>
+      <div class="flex flex-col leading-none">
+        <span class="text-xl font-bold tracking-tighter text-[#2D2D2D] font-['Montserrat']">DISEINUA</span>
+        <span class="text-[10px] tracking-[0.2em] font-light text-[#8A8A8A] font-['Montserrat']">ARQUITECTURA</span>
+      </div>
+    </a>
+    <div class="hidden md:flex items-center gap-8">
+      <a href="../index.html" class="font-['Montserrat'] font-semibold text-[11px] uppercase tracking-wider text-[#2D2D2D] pb-1 hover:text-[#E8621F] transition-colors">Inicio</a>
+      <a href="../proyectos.html" class="font-['Montserrat'] font-semibold text-[11px] uppercase tracking-wider text-[#E8621F] border-b-2 border-[#E8621F] pb-1">Proyectos</a>
+      <a href="../servicios.html" class="font-['Montserrat'] font-semibold text-[11px] uppercase tracking-wider text-[#2D2D2D] pb-1 hover:text-[#E8621F] transition-colors">Servicios</a>
+      <a href="../index.html#nosotros" class="font-['Montserrat'] font-semibold text-[11px] uppercase tracking-wider text-[#2D2D2D] pb-1 hover:text-[#E8621F] transition-colors">Nosotros</a>
+      <a href="../contacto.html" class="font-['Montserrat'] font-semibold text-[11px] uppercase tracking-wider text-[#2D2D2D] pb-1 hover:text-[#E8621F] transition-colors">Contacto</a>
+    </div>
+    <div class="flex items-center gap-3">
+      <button id="mobile-menu-btn" class="md:hidden flex flex-col gap-1.5 p-2">
+        <span class="w-6 h-0.5 bg-[#2D2D2D]"></span>
+        <span class="w-6 h-0.5 bg-[#2D2D2D]"></span>
+        <span class="w-6 h-0.5 bg-[#2D2D2D]"></span>
+      </button>
+      <a href="../contacto.html">
+        <button class="bg-[#E8621F] text-white px-6 h-[44px] rounded-lg font-['Montserrat'] font-semibold text-[11px] uppercase tracking-wider hover:opacity-90 active:scale-95 transition-all">
+          SOLICITAR COTIZACIÓN
+        </button>
+      </a>
+    </div>
+  </div>
+</nav>
+<div id="mobile-menu" class="hidden md:hidden bg-white border-b border-[#C4C4C4]/20 px-8 py-4 flex flex-col gap-4">
+  <a href="../index.html" class="font-['Montserrat'] font-semibold text-[11px] uppercase tracking-wider text-[#2D2D2D]">Inicio</a>
+  <a href="../proyectos.html" class="font-['Montserrat'] font-semibold text-[11px] uppercase tracking-wider text-[#E8621F]">Proyectos</a>
+  <a href="../servicios.html" class="font-['Montserrat'] font-semibold text-[11px] uppercase tracking-wider text-[#2D2D2D]">Servicios</a>
+  <a href="../index.html#nosotros" class="font-['Montserrat'] font-semibold text-[11px] uppercase tracking-wider text-[#2D2D2D]">Nosotros</a>
+  <a href="../contacto.html" class="font-['Montserrat'] font-semibold text-[11px] uppercase tracking-wider text-[#2D2D2D]">Contacto</a>
+</div>
+
+<!-- Project Hero -->
+<section class="relative h-[716px] w-full overflow-hidden">
+  <div class="absolute inset-0 bg-gradient-to-t from-[#2D2D2D]/90 via-[#2D2D2D]/20 to-transparent z-10"></div>
+  <img alt="Casa Miguel Claro" class="absolute inset-0 w-full h-full object-cover" src="../../Fotos diseinua/Remodelaciones Casa/Casa Miguel Claro/Album editadas/DSC_0430.jpg"/>
+  <div class="relative z-20 h-full max-w-[1200px] mx-auto px-8 flex flex-col justify-end pb-16">
+    <nav class="flex text-white/70 text-[11px] uppercase font-semibold tracking-widest mb-4">
+      <a href="../proyectos.html" class="hover:text-white transition-colors">Proyectos</a>
+      <span class="mx-2">/</span>
+      <span>Residencial</span>
+      <span class="mx-2">/</span>
+      <span class="text-white">Casa Costanera</span>
+    </nav>
+    <div class="inline-block bg-[#E8621F] text-white text-[10px] font-bold px-3 py-1 tracking-widest mb-6 w-fit rounded-sm">RESIDENCIAL</div>
+    <h1 class="font-['Montserrat'] text-white text-5xl md:text-[52px] font-bold leading-tight mb-4 max-w-2xl">Casa Costanera</h1>
+    <p class="text-white/90 text-lg max-w-xl font-inter mb-8">Una residencia diseñada para la familia González — donde la luz natural es el material más noble.</p>
+    <div class="flex flex-wrap gap-8 text-white">
+      <div class="flex flex-col">
+        <span class="text-[10px] text-white/50 uppercase tracking-tighter">Ubicación</span>
+        <span class="font-medium">Las Condes</span>
+      </div>
+      <div class="flex flex-col border-l border-white/20 pl-8">
+        <span class="text-[10px] text-white/50 uppercase tracking-tighter">Año</span>
+        <span class="font-medium">2024</span>
+      </div>
+      <div class="flex flex-col border-l border-white/20 pl-8">
+        <span class="text-[10px] text-white/50 uppercase tracking-tighter">Superficie</span>
+        <span class="font-medium">320 m²</span>
+      </div>
+      <div class="flex flex-col border-l border-white/20 pl-8">
+        <span class="text-[10px] text-white/50 uppercase tracking-tighter">Categoría</span>
+        <span class="font-medium">Residencial</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Project Overview -->
+<section class="max-w-[1200px] mx-auto px-8 py-24 grid grid-cols-1 lg:grid-cols-12 gap-16">
+  <!-- Left Content -->
+  <div class="lg:col-span-7">
+    <span class="text-[#E8621F] font-['Montserrat'] font-semibold text-[11px] uppercase tracking-[0.05em] block mb-4">DESCRIPCIÓN DEL PROYECTO</span>
+    <h2 class="font-['Montserrat'] text-4xl font-bold mb-8 text-[#2D2D2D]">El hogar como reflejo de una historia</h2>
+    <div class="space-y-6 text-[#4A4A4A] font-inter leading-relaxed text-base">
+      <p>Ubicada en una pendiente privilegiada de Las Condes, Casa Costanera se concibe como una serie de volúmenes horizontales que parecen flotar sobre el terreno. El desafío principal fue integrar la vivienda con el entorno natural, preservando la privacidad sin sacrificar las vistas panorámicas hacia la ciudad y la cordillera.</p>
+      <p>La materialidad se define por el uso honesto del hormigón a la vista, la madera de pino termotratada y grandes paños de vidrio de alto rendimiento térmico. Cada espacio fue estudiado según el recorrido solar, permitiendo que la luz actúe como un elemento dinámico que transforma la atmósfera interior a lo largo del día.</p>
+      <p>El programa se organiza en torno a un patio central que funciona como el pulmón de la casa, conectando las áreas sociales del primer nivel con los dormitorios privados del piso superior, garantizando una ventilación cruzada constante y una sensación de apertura infinita.</p>
+    </div>
+    <blockquote class="mt-12 border-l-4 border-[#F5B731] pl-8 py-4 italic text-[#2D2D2D] text-xl leading-relaxed font-light">
+      "Diseinua no solo diseñó nuestra casa — diseñó la manera en que vivimos."
+      <footer class="mt-4 not-italic font-semibold text-sm text-[#8A8A8A]">— María González</footer>
+    </blockquote>
+  </div>
+  <!-- Right Sidebar (Sticky Card) -->
+  <div class="lg:col-span-5 relative">
+    <div class="sticky top-28 bg-white border border-[#C4C4C4]/30 p-8 rounded-lg shadow-sm">
+      <h3 class="font-['Montserrat'] font-bold text-lg mb-6 text-[#2D2D2D] uppercase tracking-wider">Ficha Técnica</h3>
+      <div class="space-y-4 mb-8">
+        <div class="flex justify-between items-center py-3 border-b border-[#C4C4C4]/10">
+          <span class="text-[11px] font-semibold text-[#8A8A8A] uppercase tracking-wider">Cliente</span>
+          <span class="text-sm font-medium">Familia González</span>
+        </div>
+        <div class="flex justify-between items-center py-3 border-b border-[#C4C4C4]/10">
+          <span class="text-[11px] font-semibold text-[#8A8A8A] uppercase tracking-wider">Ubicación</span>
+          <span class="text-sm font-medium">Las Condes</span>
+        </div>
+        <div class="flex justify-between items-center py-3 border-b border-[#C4C4C4]/10">
+          <span class="text-[11px] font-semibold text-[#8A8A8A] uppercase tracking-wider">Año</span>
+          <span class="text-sm font-medium">2024</span>
+        </div>
+        <div class="flex justify-between items-center py-3 border-b border-[#C4C4C4]/10">
+          <span class="text-[11px] font-semibold text-[#8A8A8A] uppercase tracking-wider">Tamaño</span>
+          <span class="text-sm font-medium">320 m²</span>
+        </div>
+        <div class="flex justify-between items-center py-3 border-b border-[#C4C4C4]/10">
+          <span class="text-[11px] font-semibold text-[#8A8A8A] uppercase tracking-wider">Estructura</span>
+          <span class="text-sm font-medium">Hormigón y Madera</span>
+        </div>
+      </div>
+      <a href="../contacto.html">
+        <button class="w-full bg-[#E8621F] text-white font-['Montserrat'] font-semibold text-[11px] uppercase tracking-[0.05em] py-4 rounded-lg hover:bg-[#F5B731] transition-all mb-4">
+          SOLICITAR PROYECTO SIMILAR
+        </button>
+      </a>
+      <a class="block text-center text-[#E8621F] font-['Montserrat'] font-semibold text-[11px] uppercase tracking-[0.05em] hover:underline transition-all" href="../proyectos.html">
+        Volver a proyectos →
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Photo Gallery -->
+<section class="max-w-[1200px] mx-auto px-8 py-24 border-t border-[#C4C4C4]/20">
+  <span class="text-[#E8621F] font-['Montserrat'] font-semibold text-[11px] uppercase tracking-[0.05em] block mb-4">GALERÍA</span>
+  <h2 class="font-['Montserrat'] text-4xl font-bold mb-12 text-[#2D2D2D]">El proyecto en imágenes</h2>
+  <div class="grid grid-cols-12 gap-6">
+    <!-- Row 1 -->
+    <div class="col-span-12 md:col-span-8 aspect-[16/9] bg-[#E0E0E0] overflow-hidden rounded-sm group">
+      <img alt="Sala de Estar" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="../../Fotos diseinua/Mobiliario interior/Sala de estar Encina Lujo/002.jpg"/>
+    </div>
+    <div class="col-span-12 md:col-span-4 aspect-square md:aspect-auto bg-[#E0E0E0] overflow-hidden rounded-sm group">
+      <img alt="Detalle exterior" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="../../Fotos diseinua/Remodelaciones Casa/Casa Miguel Claro/Album editadas/DSC_0433.jpg"/>
+    </div>
+    <!-- Row 2 -->
+    <div class="col-span-12 md:col-span-4 aspect-square bg-[#E0E0E0] overflow-hidden rounded-sm group">
+      <img alt="Escalera" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="../../Fotos diseinua/Remodelaciones Casa/Casa Miguel Claro/Album editadas/DSC_0438.jpg"/>
+    </div>
+    <div class="col-span-12 md:col-span-4 aspect-square bg-[#E0E0E0] overflow-hidden rounded-sm group">
+      <img alt="Cocina" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="../../Fotos diseinua/Cocinas/Cocina camino el Alba/light/01.jpg"/>
+    </div>
+    <div class="col-span-12 md:col-span-4 aspect-square bg-[#E0E0E0] overflow-hidden rounded-sm group">
+      <img alt="Dormitorio" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="../../Fotos diseinua/Mobiliario interior/Respaldo de Cama El Bosque/IMG_0319.JPG"/>
+    </div>
+    <!-- Row 3 -->
+    <div class="col-span-12 md:col-span-4 aspect-square md:aspect-auto bg-[#E0E0E0] overflow-hidden rounded-sm group">
+      <img alt="Fachada" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="../../Fotos diseinua/Remodelaciones Casa/Casa Miguel Claro/Album editadas/DSC_0445.jpg"/>
+    </div>
+    <div class="col-span-12 md:col-span-8 aspect-[16/9] bg-[#E0E0E0] overflow-hidden rounded-sm group">
+      <img alt="Patio" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="../../Fotos diseinua/Remodelaciones Casa/Casa Miguel Claro/Album editadas/DSC_0447.jpg"/>
+    </div>
+  </div>
+</section>
+
+<!-- Design Process Strip -->
+<section class="bg-[#F7F7F5] py-24">
+  <div class="max-w-[1200px] mx-auto px-8">
+    <h2 class="font-['Montserrat'] text-4xl font-bold mb-16 text-center text-[#2D2D2D]">El proceso detrás del resultado</h2>
+    <div class="relative">
+      <div class="absolute top-1/2 left-0 w-full h-[2px] bg-[#E8621F]/20 -translate-y-1/2 hidden md:block"></div>
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 relative z-10">
+        <div class="bg-white p-8 rounded-lg shadow-sm border border-[#C4C4C4]/10 flex flex-col items-center text-center">
+          <div class="w-12 h-12 rounded-full bg-[#E8621F] flex items-center justify-center text-white font-bold mb-6">01</div>
+          <h4 class="font-['Montserrat'] font-bold text-sm uppercase tracking-wider mb-2">Concepto</h4>
+          <p class="text-xs text-[#8A8A8A] font-inter">Definición de visión y alma del proyecto.</p>
+          <span class="mt-4 text-[#E8621F] font-bold text-xs uppercase">3 Meses</span>
+        </div>
+        <div class="bg-white p-8 rounded-lg shadow-sm border border-[#C4C4C4]/10 flex flex-col items-center text-center">
+          <div class="w-12 h-12 rounded-full bg-[#F5B731] flex items-center justify-center text-white font-bold mb-6">02</div>
+          <h4 class="font-['Montserrat'] font-bold text-sm uppercase tracking-wider mb-2">Anteproyecto</h4>
+          <p class="text-xs text-[#8A8A8A] font-inter">Primeras líneas y volumetría general.</p>
+          <span class="mt-4 text-[#E8621F] font-bold text-xs uppercase">2 Meses</span>
+        </div>
+        <div class="bg-white p-8 rounded-lg shadow-sm border border-[#C4C4C4]/10 flex flex-col items-center text-center">
+          <div class="w-12 h-12 rounded-full bg-[#2D2D2D] flex items-center justify-center text-white font-bold mb-6">03</div>
+          <h4 class="font-['Montserrat'] font-bold text-sm uppercase tracking-wider mb-2">Proyecto</h4>
+          <p class="text-xs text-[#8A8A8A] font-inter">Planimetría técnica y especificaciones.</p>
+          <span class="mt-4 text-[#E8621F] font-bold text-xs uppercase">4 Meses</span>
+        </div>
+        <div class="bg-white p-8 rounded-lg shadow-sm border border-[#C4C4C4]/10 flex flex-col items-center text-center">
+          <div class="w-12 h-12 rounded-full bg-[#E8621F]/80 flex items-center justify-center text-white font-bold mb-6">04</div>
+          <h4 class="font-['Montserrat'] font-bold text-sm uppercase tracking-wider mb-2">Obra</h4>
+          <p class="text-xs text-[#8A8A8A] font-inter">Materialización y dirección técnica.</p>
+          <span class="mt-4 text-[#E8621F] font-bold text-xs uppercase">14 Meses</span>
+        </div>
+      </div>
+    </div>
+    <!-- Timeline bar -->
+    <div class="mt-16 w-full h-8 bg-[#C4C4C4]/10 rounded-full relative overflow-hidden flex items-center px-6">
+      <div class="absolute inset-y-0 left-0 bg-[#E8621F]/10 w-full"></div>
+      <div class="flex justify-between w-full relative z-10 text-[10px] font-bold uppercase tracking-widest text-[#8A8A8A]">
+        <span>Inicio: Enero 2022</span>
+        <span class="text-[#E8621F]">23 meses de ejecución total</span>
+        <span>Entrega: Diciembre 2023</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Related Projects -->
+<section class="max-w-[1200px] mx-auto px-8 py-24">
+  <div class="flex justify-between items-end mb-12">
+    <div>
+      <span class="text-[#E8621F] font-['Montserrat'] font-semibold text-[11px] uppercase tracking-[0.05em] block mb-4">MÁS PROYECTOS</span>
+      <h2 class="font-['Montserrat'] text-4xl font-bold text-[#2D2D2D]">Residencias Similares</h2>
+    </div>
+    <a class="hidden md:block text-[#E8621F] font-['Montserrat'] font-semibold text-[11px] uppercase tracking-[0.05em] border-b border-[#E8621F] pb-1" href="../proyectos.html">Ver todos</a>
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <div class="group border border-[#E8E6E1] rounded-xl overflow-hidden hover:-translate-y-2 transition-all duration-300 bg-white">
+      <div class="aspect-[4/3] overflow-hidden bg-[#C4C4C4]/20">
+        <img alt="Cocina Bilbao" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="../../Fotos diseinua/Cocinas/Cocina Bilbao/optimizadas web/001.jpg"/>
+      </div>
+      <div class="p-6">
+        <span class="text-[10px] text-[#8A8A8A] font-bold uppercase tracking-widest">Santiago</span>
+        <h3 class="font-['Montserrat'] font-bold text-lg mt-1 mb-4 text-[#2D2D2D]">Casa Lo Barnechea</h3>
+        <div class="flex justify-between items-center">
+          <span class="text-sm text-[#4A4A4A]">450 m²</span>
+          <span class="material-symbols-outlined text-[#E8621F]">arrow_forward</span>
+        </div>
+      </div>
+    </div>
+    <div class="group border border-[#E8E6E1] rounded-xl overflow-hidden hover:-translate-y-2 transition-all duration-300 bg-white">
+      <div class="aspect-[4/3] overflow-hidden bg-[#C4C4C4]/20">
+        <img alt="Cocina Asturias" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="../../Fotos diseinua/Cocinas/Cocina Asturias/3a3a8a32-3d1c-4d57-9827-f31a76c5e04b.JPG"/>
+      </div>
+      <div class="p-6">
+        <span class="text-[10px] text-[#8A8A8A] font-bold uppercase tracking-widest">Valparaíso</span>
+        <h3 class="font-['Montserrat'] font-bold text-lg mt-1 mb-4 text-[#2D2D2D]">Casa Zapallar</h3>
+        <div class="flex justify-between items-center">
+          <span class="text-sm text-[#4A4A4A]">280 m²</span>
+          <span class="material-symbols-outlined text-[#E8621F]">arrow_forward</span>
+        </div>
+      </div>
+    </div>
+    <div class="group border border-[#E8E6E1] rounded-xl overflow-hidden hover:-translate-y-2 transition-all duration-300 bg-white">
+      <div class="aspect-[4/3] overflow-hidden bg-[#C4C4C4]/20">
+        <img alt="Respaldo Cama El Bosque" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="../../Fotos diseinua/Mobiliario interior/Respaldo de Cama El Bosque/IMG_0322.JPG"/>
+      </div>
+      <div class="p-6">
+        <span class="text-[10px] text-[#8A8A8A] font-bold uppercase tracking-widest">Santiago Centro</span>
+        <h3 class="font-['Montserrat'] font-bold text-lg mt-1 mb-4 text-[#2D2D2D]">Departamento Lastarria</h3>
+        <div class="flex justify-between items-center">
+          <span class="text-sm text-[#4A4A4A]">120 m²</span>
+          <span class="material-symbols-outlined text-[#E8621F]">arrow_forward</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Project CTA -->
+<section class="bg-[#E8621F] py-24">
+  <div class="max-w-[1200px] mx-auto px-8 text-center text-white">
+    <h2 class="font-['Montserrat'] text-4xl md:text-5xl font-bold mb-6">¿Tu casa podría ser nuestra próxima historia?</h2>
+    <p class="text-white/90 text-lg mb-12 max-w-2xl mx-auto font-inter">Creemos que cada proyecto es una oportunidad única de crear algo excepcional. Cuéntanos tu visión y diseñemos juntos el espacio que mereces.</p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <a href="../contacto.html">
+        <button class="bg-white text-[#E8621F] font-['Montserrat'] font-semibold text-[11px] uppercase tracking-[0.05em] px-10 py-5 rounded-lg hover:bg-[#F7F7F5] transition-colors">
+          INICIAR MI PROYECTO
+        </button>
+      </a>
+      <a href="../proyectos.html">
+        <button class="border-2 border-white text-white font-['Montserrat'] font-semibold text-[11px] uppercase tracking-[0.05em] px-10 py-5 rounded-lg hover:bg-white/10 transition-colors">
+          VER TODOS LOS PROYECTOS
+        </button>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-[#2D2D2D] text-white pt-24 pb-12 px-8">
+  <div class="max-w-[1200px] mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-16 mb-16">
+      <div class="col-span-1 flex flex-col gap-6">
+        <div class="flex items-center gap-3">
+          <div class="flex gap-1">
+            <span class="w-2 h-2 rounded-full bg-[#E8621F]"></span>
+            <span class="w-2 h-2 rounded-full bg-[#F5B731]"></span>
+            <span class="w-2 h-2 rounded-full bg-[#C4C4C4]"></span>
+          </div>
+          <span class="text-lg font-bold tracking-tighter text-white font-['Montserrat']">DISEINUA</span>
+        </div>
+        <p class="text-[#8A8A8A] text-sm leading-relaxed max-w-[240px]">Estudio de arquitectura centrado en la precisión técnica y la calidez emocional. Santiago, Chile.</p>
+      </div>
+      <div class="flex flex-col gap-6">
+        <h4 class="font-['Montserrat'] font-bold text-[11px] uppercase tracking-widest text-[#E8621F]">NAVEGACIÓN</h4>
+        <nav class="flex flex-col gap-3">
+          <a href="../proyectos.html" class="text-[#8A8A8A] hover:text-[#F5B731] text-sm transition-colors">Proyectos</a>
+          <a href="../servicios.html" class="text-[#8A8A8A] hover:text-[#F5B731] text-sm transition-colors">Servicios</a>
+          <a href="../index.html#nosotros" class="text-[#8A8A8A] hover:text-[#F5B731] text-sm transition-colors">Nosotros</a>
+          <a href="../contacto.html" class="text-[#8A8A8A] hover:text-[#F5B731] text-sm transition-colors">Contacto</a>
+        </nav>
+      </div>
+      <div class="flex flex-col gap-6">
+        <h4 class="font-['Montserrat'] font-bold text-[11px] uppercase tracking-widest text-[#E8621F]">CONTACTO</h4>
+        <div class="flex flex-col gap-3">
+          <p class="text-[#8A8A8A] text-sm">hola@diseinua.cl</p>
+          <p class="text-[#8A8A8A] text-sm">+56 2 2345 6789</p>
+          <p class="text-[#8A8A8A] text-sm">Av. Providencia 1234, Santiago</p>
+        </div>
+      </div>
+      <div class="flex flex-col gap-6">
+        <h4 class="font-['Montserrat'] font-bold text-[11px] uppercase tracking-widest text-[#E8621F]">SÍGUENOS</h4>
+        <div class="flex gap-4">
+          <a href="#" class="w-10 h-10 rounded-full border border-[#C4C4C4]/30 flex items-center justify-center hover:bg-[#E8621F] hover:border-[#E8621F] transition-all group">
+            <span class="material-symbols-outlined text-xl text-[#C4C4C4] group-hover:text-white">camera_alt</span>
+          </a>
+          <a href="#" class="w-10 h-10 rounded-full border border-[#C4C4C4]/30 flex items-center justify-center hover:bg-[#E8621F] hover:border-[#E8621F] transition-all group">
+            <span class="material-symbols-outlined text-xl text-[#C4C4C4] group-hover:text-white">work</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="border-t border-[#C4C4C4]/10 pt-12 flex flex-col md:flex-row justify-between items-center gap-4">
+      <p class="text-[#8A8A8A] text-[11px] font-['Montserrat'] uppercase tracking-widest">© 2024 Diseinua Arquitectura · Santiago, Chile</p>
+      <div class="flex gap-8">
+        <a href="#" class="text-[#8A8A8A] text-[11px] font-['Montserrat'] uppercase tracking-widest hover:text-white transition-colors">Privacidad</a>
+        <a href="#" class="text-[#8A8A8A] text-[11px] font-['Montserrat'] uppercase tracking-widest hover:text-white transition-colors">Términos</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const menuBtn = document.getElementById('mobile-menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+  if (menuBtn && mobileMenu) {
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  }
+</script>
+</body>
+</html>

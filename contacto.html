@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html class="light" lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contacto | Diseinua Arquitectura</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: {
+          "brand-orange": "#E8621F",
+          "brand-amber": "#F5B731",
+          "brand-offwhite": "#F7F7F5",
+          "brand-charcoal": "#2D2D2D",
+          "brand-darkgray": "#4A4A4A",
+          "brand-gray": "#C4C4C4",
+          "brand-midgray": "#8A8A8A",
+          "brand-tint-orange": "#FEF0E8",
+          "brand-tint-amber": "#FEF6E5",
+        },
+        borderRadius: {
+          "DEFAULT": "0.125rem",
+          "lg": "0.25rem",
+          "xl": "0.5rem",
+          "full": "0.75rem"
+        },
+        fontFamily: {
+          "montserrat": ["Montserrat", "sans-serif"],
+          "inter": ["Inter", "sans-serif"],
+        }
+      }
+    }
+  }
+</script>
+<style>
+  .material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  }
+</style>
+</head>
+<body class="bg-[#F7F7F5] text-[#2D2D2D] font-inter antialiased">
+
+<!-- NAVIGATION -->
+<nav class="sticky top-0 z-50 bg-white border-b border-[#C4C4C4]/20">
+  <div class="max-w-[1200px] mx-auto flex justify-between items-center px-8 py-4 w-full">
+    <a href="index.html" class="flex items-center gap-3 no-underline">
+      <div class="flex gap-1">
+        <span class="w-3 h-3 rounded-full bg-[#E8621F]"></span>
+        <span class="w-3 h-3 rounded-full bg-[#F5B731]"></span>
+        <span class="w-3 h-3 rounded-full bg-[#C4C4C4]"></span>
+      </div>
+      <div class="flex flex-col leading-none">
+        <span class="text-xl font-bold tracking-tighter text-[#2D2D2D] font-['Montserrat']">DISEINUA</span>
+        <span class="text-[10px] tracking-[0.2em] font-light text-[#8A8A8A] font-['Montserrat']">ARQUITECTURA</span>
+      </div>
+    </a>
+    <div class="hidden md:flex items-center gap-8">
+      <a href="index.html" class="font-['Montserrat'] font-semibold text-[11px] uppercase tracking-wider text-[#2D2D2D] pb-1 hover:text-[#E8621F] transition-colors">Inicio</a>
+      <a href="proyectos.html" class="font-['Montserrat'] font-semibold text-[11px] uppercase tracking-wider text-[#2D2D2D] pb-1 hover:text-[#E8621F] transition-colors">Proyectos</a>
+      <a href="servicios.html" class="font-['Montserrat'] font-semibold text-[11px] uppercase tracking-wider text-[#2D2D2D] pb-1 hover:text-[#E8621F] transition-colors">Servicios</a>
+      <a href="index.html#nosotros" class="font-['Montserrat'] font-semibold text-[11px] uppercase tracking-wider text-[#2D2D2D] pb-1 hover:text-[#E8621F] transition-colors">Nosotros</a>
+      <a href="contacto.html" class="font-['Montserrat'] font-semibold text-[11px] uppercase tracking-wider text-[#E8621F] border-b-2 border-[#E8621F] pb-1">Contacto</a>
+    </div>
+    <div class="flex items-center gap-3">
+      <button id="mobile-menu-btn" class="md:hidden flex flex-col gap-1.5 p-2">
+        <span class="w-6 h-0.5 bg-[#2D2D2D]"></span>
+        <span class="w-6 h-0.5 bg-[#2D2D2D]"></span>
+        <span class="w-6 h-0.5 bg-[#2D2D2D]"></span>
+      </button>
+      <a href="contacto.html">
+        <button class="bg-[#E8621F] text-white px-6 h-[44px] rounded-lg font-['Montserrat'] font-semibold text-[11px] uppercase tracking-wider hover:opacity-90 active:scale-95 transition-all">
+          SOLICITAR COTIZACIÓN
+        </button>
+      </a>
+    </div>
+  </div>
+</nav>
+<div id="mobile-menu" class="hidden md:hidden bg-white border-b border-[#C4C4C4]/20 px-8 py-4 flex flex-col gap-4">
+  <a href="index.html" class="font-['Montserrat'] font-semibold text-[11px] uppercase tracking-wider text-[#2D2D2D]">Inicio</a>
+  <a href="proyectos.html" class="font-['Montserrat'] font-semibold text-[11px] uppercase tracking-wider text-[#2D2D2D]">Proyectos</a>
+  <a href="servicios.html" class="font-['Montserrat'] font-semibold text-[11px] uppercase tracking-wider text-[#2D2D2D]">Servicios</a>
+  <a href="index.html#nosotros" class="font-['Montserrat'] font-semibold text-[11px] uppercase tracking-wider text-[#2D2D2D]">Nosotros</a>
+  <a href="contacto.html" class="font-['Montserrat'] font-semibold text-[11px] uppercase tracking-wider text-[#E8621F]">Contacto</a>
+</div>
+
+<main>
+  <!-- Hero Section: Split Layout -->
+  <section class="min-h-screen flex flex-col md:flex-row">
+    <!-- Left Half: Content -->
+    <div class="w-full md:w-1/2 bg-[#E8621F] px-8 py-24 md:p-24 flex flex-col justify-center text-white">
+      <h1 class="font-['Montserrat'] font-bold text-[42px] leading-tight mb-6">Cuéntanos tu proyecto.</h1>
+      <p class="font-inter text-lg opacity-80 mb-12 max-w-md">Cada gran espacio comienza con una conversación. Sin compromisos, sin jerga técnica.</p>
+      <div class="space-y-6 mb-12">
+        <div class="flex items-center gap-4">
+          <span class="material-symbols-outlined">location_on</span>
+          <span class="font-inter">Av. Providencia 1234, Santiago, Chile</span>
+        </div>
+        <div class="flex items-center gap-4">
+          <span class="material-symbols-outlined">call</span>
+          <span class="font-inter">+56 2 2345 6789</span>
+        </div>
+        <div class="flex items-center gap-4">
+          <span class="material-symbols-outlined">mail</span>
+          <span class="font-inter">hola@diseinua.cl</span>
+        </div>
+      </div>
+      <div class="flex gap-6 mb-12 font-['Montserrat'] text-[11px] font-semibold uppercase tracking-widest">
+        <a class="underline hover:text-[#F5B731] transition-colors" href="#">Instagram</a>
+        <a class="underline hover:text-[#F5B731] transition-colors" href="#">LinkedIn</a>
+        <a class="underline hover:text-[#F5B731] transition-colors" href="#">Behance</a>
+      </div>
+      <div class="flex items-center gap-3 py-4 px-6 bg-white/10 rounded-lg inline-flex self-start">
+        <span class="material-symbols-outlined text-[#F5B731]" style="font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;">schedule</span>
+        <span class="font-inter text-sm">Respondemos en menos de 24 horas hábiles.</span>
+      </div>
+    </div>
+    <!-- Right Half: Form -->
+    <div class="w-full md:w-1/2 bg-[#F7F7F5] px-8 py-24 md:p-24 flex items-center justify-center">
+      <div class="bg-white p-8 md:p-12 rounded-xl shadow-2xl shadow-black/5 w-full max-w-xl">
+        <div class="mb-8">
+          <span class="text-[#E8621F] font-['Montserrat'] text-[11px] font-semibold uppercase tracking-widest block mb-2">SOLICITAR COTIZACIÓN</span>
+          <h2 class="text-[#2D2D2D] font-['Montserrat'] font-bold text-2xl">Iniciemos la conversación</h2>
+        </div>
+        <form class="space-y-6">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="space-y-1">
+              <label class="text-[#8A8A8A] font-['Montserrat'] text-[11px] font-semibold uppercase tracking-widest">NOMBRE COMPLETO</label>
+              <input class="w-full border-b border-neutral-200 focus:border-[#E8621F] outline-none py-2 transition-colors bg-transparent" type="text"/>
+            </div>
+            <div class="space-y-1">
+              <label class="text-[#8A8A8A] font-['Montserrat'] text-[11px] font-semibold uppercase tracking-widest">CORREO ELECTRÓNICO</label>
+              <input class="w-full border-b border-neutral-200 focus:border-[#E8621F] outline-none py-2 transition-colors bg-transparent" type="email"/>
+            </div>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="space-y-1">
+              <label class="text-[#8A8A8A] font-['Montserrat'] text-[11px] font-semibold uppercase tracking-widest">TELÉFONO</label>
+              <input class="w-full border-b border-neutral-200 focus:border-[#E8621F] outline-none py-2 transition-colors bg-transparent" type="tel"/>
+            </div>
+            <div class="space-y-1">
+              <label class="text-[#8A8A8A] font-['Montserrat'] text-[11px] font-semibold uppercase tracking-widest">TIPO DE PROYECTO</label>
+              <select class="w-full border-b border-neutral-200 focus:border-[#E8621F] outline-none py-2 bg-transparent transition-colors">
+                <option>Residencial</option>
+                <option>Comercial</option>
+                <option>Interiorismo</option>
+                <option>Remodelación</option>
+              </select>
+            </div>
+          </div>
+          <div class="space-y-1">
+            <label class="text-[#8A8A8A] font-['Montserrat'] text-[11px] font-semibold uppercase tracking-widest">PRESUPUESTO ESTIMADO</label>
+            <select class="w-full border-b border-neutral-200 focus:border-[#E8621F] outline-none py-2 bg-transparent transition-colors">
+              <option>Seleccionar rango</option>
+              <option>Menos de $10M</option>
+              <option>$10M - $30M</option>
+              <option>$30M - $60M</option>
+              <option>Más de $60M</option>
+            </select>
+          </div>
+          <div class="space-y-1">
+            <label class="text-[#8A8A8A] font-['Montserrat'] text-[11px] font-semibold uppercase tracking-widest">CUÉNTANOS TU PROYECTO</label>
+            <textarea class="w-full border-b border-neutral-200 focus:border-[#E8621F] outline-none py-2 resize-none transition-colors bg-transparent" rows="4"></textarea>
+          </div>
+          <button class="w-full bg-[#E8621F] text-white font-['Montserrat'] font-bold py-4 hover:bg-[#2D2D2D] transition-all uppercase tracking-widest text-[11px] rounded-lg" type="submit">
+            ENVIAR SOLICITUD
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Contact Us Section -->
+  <section class="bg-white py-24 px-8">
+    <div class="max-w-[1200px] mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-16">
+        <div class="flex flex-col items-center text-center">
+          <div class="w-16 h-16 rounded-full bg-[#FEF6E5] flex items-center justify-center mb-6">
+            <span class="text-[#F5B731] font-['Montserrat'] font-bold text-xl">01</span>
+          </div>
+          <h3 class="text-[#2D2D2D] font-['Montserrat'] font-bold text-lg mb-2">Sin compromiso</h3>
+          <p class="text-[#4A4A4A] font-inter leading-relaxed">La primera reunión es gratuita y sin presiones.</p>
+        </div>
+        <div class="flex flex-col items-center text-center">
+          <div class="w-16 h-16 rounded-full bg-[#FEF0E8] flex items-center justify-center mb-6">
+            <span class="text-[#E8621F] font-['Montserrat'] font-bold text-xl">02</span>
+          </div>
+          <h3 class="text-[#2D2D2D] font-['Montserrat'] font-bold text-lg mb-2">Respuesta rápida</h3>
+          <p class="text-[#4A4A4A] font-inter leading-relaxed">Contestamos en menos de 24 horas hábiles.</p>
+        </div>
+        <div class="flex flex-col items-center text-center">
+          <div class="w-16 h-16 rounded-full bg-neutral-100 flex items-center justify-center mb-6">
+            <span class="text-neutral-400 font-['Montserrat'] font-bold text-xl">03</span>
+          </div>
+          <h3 class="text-[#2D2D2D] font-['Montserrat'] font-bold text-lg mb-2">Asesoría honesta</h3>
+          <p class="text-[#4A4A4A] font-inter leading-relaxed">Si tu proyecto no encaja con nuestro perfil, te lo decimos con transparencia.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="bg-[#F7F7F5] py-24 px-8">
+    <div class="max-w-[1200px] mx-auto flex flex-col md:flex-row gap-16">
+      <div class="w-full md:w-1/3">
+        <h2 class="text-[#2D2D2D] font-['Montserrat'] font-bold text-[32px] leading-tight">Preguntas frecuentes</h2>
+        <div class="h-1 w-12 bg-[#E8621F] mt-4"></div>
+      </div>
+      <div class="w-full md:w-2/3 space-y-4">
+        <div class="bg-white p-6 rounded-lg border border-neutral-200">
+          <button class="w-full flex justify-between items-center text-left group">
+            <span class="font-['Montserrat'] font-bold text-[#2D2D2D]">¿Realizan proyectos fuera de Santiago?</span>
+            <span class="material-symbols-outlined text-[#E8621F] transition-transform group-hover:rotate-90">add</span>
+          </button>
+        </div>
+        <div class="bg-white p-6 rounded-lg border border-neutral-200">
+          <button class="w-full flex justify-between items-center text-left group">
+            <span class="font-['Montserrat'] font-bold text-[#2D2D2D]">¿Cuál es la duración promedio de un proyecto?</span>
+            <span class="material-symbols-outlined text-[#E8621F] transition-transform group-hover:rotate-90">add</span>
+          </button>
+        </div>
+        <div class="bg-white p-6 rounded-lg border border-neutral-200">
+          <button class="w-full flex justify-between items-center text-left group">
+            <span class="font-['Montserrat'] font-bold text-[#2D2D2D]">¿Puedo contratar solo el diseño sin construcción?</span>
+            <span class="material-symbols-outlined text-[#E8621F] transition-transform group-hover:rotate-90">add</span>
+          </button>
+        </div>
+        <div class="bg-white p-6 rounded-lg border border-neutral-200">
+          <button class="w-full flex justify-between items-center text-left group">
+            <span class="font-['Montserrat'] font-bold text-[#2D2D2D]">¿Incluyen renders 3D en la propuesta?</span>
+            <span class="material-symbols-outlined text-[#E8621F] transition-transform group-hover:rotate-90">add</span>
+          </button>
+        </div>
+        <div class="bg-white p-6 rounded-lg border border-neutral-200">
+          <button class="w-full flex justify-between items-center text-left group">
+            <span class="font-['Montserrat'] font-bold text-[#2D2D2D]">¿Cómo se estructuran los honorarios?</span>
+            <span class="material-symbols-outlined text-[#E8621F] transition-transform group-hover:rotate-90">add</span>
+          </button>
+        </div>
+        <div class="bg-white p-6 rounded-lg border border-neutral-200">
+          <button class="w-full flex justify-between items-center text-left group">
+            <span class="font-['Montserrat'] font-bold text-[#2D2D2D]">¿Trabajan con constructoras externas?</span>
+            <span class="material-symbols-outlined text-[#E8621F] transition-transform group-hover:rotate-90">add</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Location Map Placeholder -->
+  <section class="relative h-[400px] w-full bg-neutral-100 flex items-center justify-center overflow-hidden">
+    <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(#2D2D2D 1px, transparent 1px); background-size: 32px 32px;"></div>
+    <div class="absolute inset-0 flex items-center justify-center">
+      <div class="relative z-10 bg-white p-8 rounded-lg shadow-xl border border-neutral-200 max-w-sm">
+        <p class="text-[#2D2D2D] font-['Montserrat'] font-bold mb-4">Av. Providencia 1234, Oficina 502, Santiago.</p>
+        <a class="text-[#E8621F] font-['Montserrat'] text-[11px] font-semibold uppercase tracking-widest hover:text-[#F5B731] transition-colors flex items-center gap-2" href="#">
+          Ver en Google Maps <span class="material-symbols-outlined text-sm">arrow_forward</span>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- FOOTER -->
+<footer class="bg-[#2D2D2D] text-white pt-24 pb-12 px-8">
+  <div class="max-w-[1200px] mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-16 mb-16">
+      <div class="col-span-1 flex flex-col gap-6">
+        <div class="flex items-center gap-3">
+          <div class="flex gap-1">
+            <span class="w-2 h-2 rounded-full bg-[#E8621F]"></span>
+            <span class="w-2 h-2 rounded-full bg-[#F5B731]"></span>
+            <span class="w-2 h-2 rounded-full bg-[#C4C4C4]"></span>
+          </div>
+          <span class="text-lg font-bold tracking-tighter text-white font-['Montserrat']">DISEINUA</span>
+        </div>
+        <p class="text-[#8A8A8A] text-sm leading-relaxed max-w-[240px]">Estudio de arquitectura centrado en la precisión técnica y la calidez emocional. Santiago, Chile.</p>
+      </div>
+      <div class="flex flex-col gap-6">
+        <h4 class="font-['Montserrat'] font-bold text-[11px] uppercase tracking-widest text-[#E8621F]">NAVEGACIÓN</h4>
+        <nav class="flex flex-col gap-3">
+          <a href="proyectos.html" class="text-[#8A8A8A] hover:text-[#F5B731] text-sm transition-colors">Proyectos</a>
+          <a href="servicios.html" class="text-[#8A8A8A] hover:text-[#F5B731] text-sm transition-colors">Servicios</a>
+          <a href="index.html#nosotros" class="text-[#8A8A8A] hover:text-[#F5B731] text-sm transition-colors">Nosotros</a>
+          <a href="contacto.html" class="text-[#8A8A8A] hover:text-[#F5B731] text-sm transition-colors">Contacto</a>
+        </nav>
+      </div>
+      <div class="flex flex-col gap-6">
+        <h4 class="font-['Montserrat'] font-bold text-[11px] uppercase tracking-widest text-[#E8621F]">CONTACTO</h4>
+        <div class="flex flex-col gap-3">
+          <p class="text-[#8A8A8A] text-sm">hola@diseinua.cl</p>
+          <p class="text-[#8A8A8A] text-sm">+56 2 2345 6789</p>
+          <p class="text-[#8A8A8A] text-sm">Av. Providencia 1234, Santiago</p>
+        </div>
+      </div>
+      <div class="flex flex-col gap-6">
+        <h4 class="font-['Montserrat'] font-bold text-[11px] uppercase tracking-widest text-[#E8621F]">SÍGUENOS</h4>
+        <div class="flex gap-4">
+          <a href="#" class="w-10 h-10 rounded-full border border-[#C4C4C4]/30 flex items-center justify-center hover:bg-[#E8621F] hover:border-[#E8621F] transition-all group">
+            <span class="material-symbols-outlined text-xl text-[#C4C4C4] group-hover:text-white">camera_alt</span>
+          </a>
+          <a href="#" class="w-10 h-10 rounded-full border border-[#C4C4C4]/30 flex items-center justify-center hover:bg-[#E8621F] hover:border-[#E8621F] transition-all group">
+            <span class="material-symbols-outlined text-xl text-[#C4C4C4] group-hover:text-white">work</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="border-t border-[#C4C4C4]/10 pt-12 flex flex-col md:flex-row justify-between items-center gap-4">
+      <p class="text-[#8A8A8A] text-[11px] font-['Montserrat'] uppercase tracking-widest">© 2024 Diseinua Arquitectura · Santiago, Chile</p>
+      <div class="flex gap-8">
+        <a href="#" class="text-[#8A8A8A] text-[11px] font-['Montserrat'] uppercase tracking-widest hover:text-white transition-colors">Privacidad</a>
+        <a href="#" class="text-[#8A8A8A] text-[11px] font-['Montserrat'] uppercase tracking-widest hover:text-white transition-colors">Términos</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const menuBtn = document.getElementById('mobile-menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+  if (menuBtn && mobileMenu) {
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  }
+</script>
+</body>
+</html>
